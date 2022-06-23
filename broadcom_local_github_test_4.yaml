@@ -1,0 +1,105 @@
+---
+Organization: kli
+Group: abc
+
+Product:
+    Name: uev
+    Tags: ["prem", "ONPREM", "USA"]
+    
+    Jira: 
+      - project_url: https://abc-jira.klera.net/force/UTimp
+
+    # Runtime cost bases
+    GKE:
+      - Dev-Namespace: 
+        - ampddata-js-xyz
+        - ampddata-js-xyz-2
+        - ampdprem-xyz-imp1
+        - ampdprem-xyz-imp1
+        - ampdprem-xyz-lang
+        - ampdprem-xyz-lang-gc
+        - ampdprem-xyz-lang-ttyl
+        - ampdprem-xyz-pmm-server
+        - ampdprem-xyz-psr
+        - ampdprem-xyz-sp1
+        - ampdprem-xyz-spoc
+        - ampdprem-doUT
+        - ampdprem-elastic-lang
+        - ampdprem-estonia-xyz
+        - ampdprem-icd-schema-browser
+        - ampdprem-bbl-server
+        - ampdprem-bbl-slaves
+        - ampdprem-load-spoc-lang
+        - ampdprem-spoc-xyz-lang
+        - ampdprem-uma
+        - ampdprem-vault
+      - Verify-Namespace:
+        - ampdprem-ev-lang
+        - ampdprem-ev-lang-ams
+        - ampdprem-ev-lang-gc
+        - ampdprem-ev-lang-ttyl
+        - ampdprem-ev-lang-uds
+        - ampdprem-ev-psr
+        - ampdprem-ev1-imp1
+        - ampdprem-ev1-sp1
+        - ampdprem-ev1-spoc
+        - ampdprem-ev2-imp1
+        - ampdprem-ev2-sp1
+        - ampdprem-spoc-ev-lang
+        - ampdprem-spoctemp-ev-lang
+      - Prod-Namespace:
+        - ampdprem-aiops
+        - ampdprem-dns
+        - ampdprem-monitor
+        - ampdprem-portal-Cloud-lang
+        - ampdprem-Cloud-lang
+        - ampdprem-Cloud-lang-ams
+        - ampdprem-Cloud-lang-gc
+        - ampdprem-Cloud-lang-ttyl
+        - ampdprem-Cloud-lang-uds
+        - ampdprem-Cloud-psr
+        - ampdprem-Cloud1-imp1
+        - ampdprem-Cloud1-sp1
+        - ampdprem-Cloud1-spoc
+        - ampdprem-Cloud2-imp1
+        - ampdprem-Cloud2-sp1
+        - ampdprem-psr
+        - ampdprem-spoc-Cloud-lang
+
+    Component: 
+      - Name: train
+        Team: ok
+        CD: 
+        - dev_url: https://tmc.gwd.klera.net/dockimpxyz/ampdprem-xyz
+        - prod_url: https://tmc.gwd.klera.net/dockimp/ampdprem-Cloud
+        
+        Artifactory: 
+        - helm_url: https://bjp-lvn.klera.net/amplitude/kli-uev-helm-b-pv
+        - snapshot_url: https://bjp-lvn.klera.net/amplitude/kli-uev-generic-b-pv
+        - docker_url: https://bjp-lvn.klera.net/amplitude/kli-uev-k-b-pv
+        - release_url: https://bjp-lvn.klera.net/amplitude/kli-uev-tt-b-pv
+        
+        Git: 
+          repo: https://tmc.gwd.klera.net/abc/icds-gun
+          branch: 
+            - master:
+              - Jenkins-Build-Job: https://cicd-comma.lvn.klera.net/no/i-gun-slash
+              - SonarQube: https://sts.klera.net/mp?id=icds-gun
+              - BlackDuck: https://klera-sw.app.inc.com/kl/force/5936253a470h9fd-abcd-4a100-8352-dfhghfdhjoiretmlnyw503e6f005
+              - Coverity: https://tok-ren-100.ren.klera.net:80/trv.htm#v29876/429yjkeiuw843
+            - dev:
+              - Jenkins-Build-Job: https://cicd-comma.lvn.klera.net/no/i-gun-slash
+              - SonarQube: https://sts.klera.net/mp?id=icds-gun
+              - BlackDuck: https://klera-sw.app.inc.com/kl/force/5936253a470h9fd-abcd-4a100-8352-dfhghfdhjoiretmlnyw503e6f005
+              - Coverity: https://tok-ren-100.ren.klera.net:80/trv.htm#v29876
+			  
+      - Name: mash
+        Team: losers
+        CD: 
+        - dev_url: https://tmc.gwd.klera.net/dockimpxyz/ampdprem-xyz
+        - prod_url: https://tmc.gwd.klera.net/dockimp/ampdprem-Cloud
+        
+        # Add the Github Repo details as mentioned from the line no. 82 - 94
+      
+          
+      
