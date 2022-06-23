@@ -1,0 +1,206 @@
+---
+Organization: kli
+Group: abc
+
+Product:
+    Name: uev
+    Tags: ["prem", "ONPREM", "USA"]
+    
+    Jira: 
+      # Removed the Hyphen (-) sign from project_url as it is a Key(column on Klera having multiple values)
+      project_url: 
+        - https://abc-jira.klera.net/force/UTimp
+
+    GKE:
+      # Removed the Hyphen (-) sign from Dev-Namespace as it is a Key(column on Klera having multiple values)
+      Dev-Namespace: 
+        - ampddata-js-xyz
+        - ampddata-js-xyz-2
+        - ampdprem-xyz-imp1
+        - ampdprem-xyz-imp1
+        - ampdprem-xyz-lang
+        - ampdprem-xyz-lang-gc
+        - ampdprem-xyz-lang-ttyl
+        - ampdprem-xyz-pmm-server
+        - ampdprem-xyz-psr
+        - ampdprem-xyz-sp1
+        - ampdprem-xyz-spoc
+        - ampdprem-doUT
+        - ampdprem-elastic-lang
+        - ampdprem-estonia-xyz
+        - ampdprem-icd-schema-browser
+        - ampdprem-bbl-server
+        - ampdprem-bbl-slaves
+        - ampdprem-load-spoc-lang
+        - ampdprem-spoc-xyz-lang
+        - ampdprem-uma
+        - ampdprem-vault
+     
+     # Removed the Hyphen (-) sign from Verify-Namespace as it is a Key(column on Klera having multiple values)
+      Verify-Namespace:
+        - ampdprem-ev-lang
+        - ampdprem-ev-lang-ams
+        - ampdprem-ev-lang-gc
+        - ampdprem-ev-lang-ttyl
+        - ampdprem-ev-lang-uds
+        - ampdprem-ev-psr
+        - ampdprem-ev1-imp1
+        - ampdprem-ev1-sp1
+        - ampdprem-ev1-spoc
+        - ampdprem-ev2-imp1
+        - ampdprem-ev2-sp1
+        - ampdprem-spoc-ev-lang
+        - ampdprem-spoctemp-ev-lang
+      
+      # Removed the Hyphen (-) sign from Prod-Namespace as it is a Key(column on Klera having multiple values)
+      Prod-Namespace:
+        - ampdprem-aiops
+        - ampdprem-dns
+        - ampdprem-monitor
+        - ampdprem-portal-Cloud-lang
+        - ampdprem-Cloud-lang
+        - ampdprem-Cloud-lang-ams
+        - ampdprem-Cloud-lang-gc
+        - ampdprem-Cloud-lang-ttyl
+        - ampdprem-Cloud-lang-uds
+        - ampdprem-Cloud-psr
+        - ampdprem-Cloud1-imp1
+        - ampdprem-Cloud1-sp1
+        - ampdprem-Cloud1-spoc
+        - ampdprem-Cloud2-imp1
+        - ampdprem-Cloud2-sp1
+        - ampdprem-psr
+        - ampdprem-spoc-Cloud-lang
+    
+    Component: 
+      #Added Hyphen (-) sign infront of Name so that one child of component would have Name, Team, CD(and its heirarchy as mentioned in below structure), Artifactory (and its heirarchy as mentioned in below structure), Git(and its heirarchy as mentioned in below structure)
+      
+      - Name: Name1
+        Team: Team1
+        CD:
+          # Removed the Hyphen (-) sign from dev_url as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key dev_url
+          dev_url: 
+            - https://tmc.gwd.klera.net/dockimpxyz/ampdprem-xyz
+          # Removed the Hyphen (-) sign from prod_url as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key prod_url
+          prod_url: 
+            - https://tmc.gwd.klera.net/dockimp/ampdprem-Cloud
+        
+        Artifactory:
+          # Removed the Hyphen (-) sign from helm_url as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key helm_url
+          helm_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-helm-b-pv
+          
+          # Removed the Hyphen (-) sign from snapshot_url as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key snapshot_url
+          snapshot_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-generic-b-pv
+          
+          # Removed the Hyphen (-) sign from docker_url as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key docker_url
+          docker_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-k-b-pv
+          
+          # Removed the Hyphen (-) sign from release_url as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key release_url
+          release_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-tt-b-pv
+        
+        Git: 
+          repo: https://tmc.gwd.klera.net/abc/icds-gun
+          branch: 
+            - master:
+                # Removed the Hyphen (-) sign from Jenkins-Build-Job as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key Jenkins-Build-Job
+                Jenkins-Build-Job: 
+                  - https://cicd-comma.lvn.klera.net/no/i-gun-slash
+                  
+                # Removed the Hyphen (-) sign from SonarQube as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key SonarQube
+                SonarQube: 
+                  - https://sts.klera.net/mp?id=icds-gun
+                
+                # Removed the Hyphen (-) sign from BlackDuck as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key BlackDuck
+                BlackDuck: 
+                  - https://klera-sw.app.inc.com/kl/force/5936253a470h9fd-abcd-4a100-8352-dfhghfdhjoiretmlnyw503e6f005
+                
+                # Removed the Hyphen (-) sign from Coverity as it is a Key(column on Klera having multiple values) and added Hyphen (-) sign for its value(link) as the urls could be multiple inside the key Coverity
+                Coverity: 
+                  - https://tok-ren-100.ren.klera.net:80/trv.htm#v29876/429yjkeiuw843
+                  
+            - dev:
+                # Please note that same logic of removing Hyphen is applied here as well as mentioned for the keys of master branch above.
+                
+                Jenkins-Build-Job: 
+                  - https://cicd-comma.lvn.klera.net/no/i-gun-slash2
+                SonarQube: 
+                  - https://sts.klera.net/mp?id=icds-gun2
+                BlackDuck: 
+                  - https://klera-sw.app.inc.com/kl/force/5936253a470h9fd-abcd-4a100-8352-dfhghfdhjoiretmlnyw503e6f0052
+                Coverity: 
+                  - https://tok-ren-100.ren.klera.net:80/trv.htm#v29876/429yjkeiuw8432
+      
+      # Please note that below is the 2nd value of component having same logic appiled as for 1st value above for urls.
+      
+      # We are trying to show different cases of CD, Artifactory and Git here when only Git repo url is present with no branch details and when branches are present but there is no value inside Jenkins-Build-Job, SonarQube, BlackDuck and Coverity urls. Expectation is that if there is no value inside any key atleast null should be present. Also, there could be null values in  CD urls(dev_url and prod_url) and Artifactory urls(helm_url, snapshot_url, docker_url and release_url)
+      
+      # Case-1 having Git branch as no value (Null)
+      - Name: Name2
+        Team: Team2
+        CD:
+          dev_url: 
+            - https://tmc.gwd.klera.net/dockimpxyz/ampdprem-xyz21
+          
+          prod_url: 
+            - https://tmc.gwd.klera.net/dockimp/ampdprem-Cloud22
+        
+        Artifactory:
+          
+          helm_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-helm-b-pv21
+          
+          snapshot_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-generic-b-pv22
+          
+          
+          docker_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-k-b-pv21
+          
+          
+          release_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-tt-b-pv22
+        
+        Git: 
+          repo: https://tmc.gwd.klera.net/abc/icds-gun21
+          branch: Null
+    
+     # Case-2 having Git branch has some value but there are some urls which have Null value. Also, there could be null values in Artifactory urls and CD urls.
+      - Name: Name3
+        Team: Team3
+        CD:
+          dev_url: Null
+          
+          prod_url: 
+            - https://tmc.gwd.klera.net/dockimp/ampdprem-Cloud2232
+        
+        Artifactory:
+          
+          helm_url: Null
+          
+          snapshot_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-generic-b-pv2232
+          
+          
+          docker_url: 
+            - https://bjp-lvn.klera.net/amplitude/kli-uev-k-b-pv2131
+          
+          
+          release_url: Null
+        
+        Git: 
+          repo: https://tmc.gwd.klera.net/abc/icds-gun2131
+          branch:
+            - master:
+                Jenkins-Build-Job: 
+                  - https://cicd-comma.lvn.klera.net/no/i-gun-slash3131
+                 
+                SonarQube: Null
+                
+                BlackDuck: Null
+               
+                Coverity: 
+                  - https://tok-ren-100.ren.klera.net:80/trv.htm#v29876/429yjkeiuw8433132
