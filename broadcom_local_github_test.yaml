@@ -11,3 +11,6 @@ Product:
     # Project level tools (could be any at product level or component level if different)
     Jira: 
       - project_url: https://sed-klera.net/projects/CS
+      - project_url: https://sed-klera.net/projects/CS
+      - project_url: https://sed-klera.net/projects/CS1
+      - project_url: https://sed-klera.net/projects/CS2
