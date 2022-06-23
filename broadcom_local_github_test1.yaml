@@ -1,0 +1,13 @@
+---
+Organization: SBO
+Group: SED
+
+# Products for the group
+Product:
+    # Product attributes that apply to the entire product are defined here, else overridden at the service/component level is unique 
+    Name: SPS
+    Tags: ["Anurag", "Bisen", "FEDRAMP"]
+    
+    # Project level tools (could be any at product level or component level if different)
+    Jira: 
+      - project_url: https://sed-klera.net/projects/CS
